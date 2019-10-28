@@ -1,18 +1,15 @@
 #include <stdio.h>
 
-main()
-{
-    int BitCount2(unsigned int n)
-    
-    {
-        unsigned int c=0;
-        while (n >0)
-        {
-            if ((n &1)==1)
-            ++c;
-            n >>=1;
-        }
-    return c;
-    }
-}
+ int main(){
+     long long input;
+     int lb =0;
+     scanf ("%lld",&input);
+     while (input){
+         if (input % 2 == 1){
+             lb++;}
 
+    input /=2;
+     }
+     printf("%d\n",lb);
+     return 0;
+ }
