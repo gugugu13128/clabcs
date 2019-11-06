@@ -1,6 +1,7 @@
-#include <stdio.h>
-
+#include<stdio.h>
+#include <limits.h>
 int main()
 {
-    printf("int size:%lu byte\n",sizeof(int));
+printf("%u\n", (UINT_MAX)*4 );
+return 0;
 }
